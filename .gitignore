@@ -1,0 +1,26 @@
+# Python virtual environment
+.venv/
+.venv*/
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Generated databases
+*.db
+*.sqlite
+*.sqlite3
+
+# Secrets
+.env
+.env.*
+
+# Editor files
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Generated output
+out/
+# Avoid duplicate dataset archive
+full_dataset.zip

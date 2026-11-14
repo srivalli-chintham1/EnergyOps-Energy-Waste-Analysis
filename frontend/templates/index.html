@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Industrial Energy Intelligence</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+  <header class="topbar">
+    <div><div class="eyebrow">INDUSTRIAL ANALYTICS PLATFORM</div><h1>Energy Intelligence Dashboard</h1></div>
+    <button id="reloadBtn" class="secondary">Reload CSV data</button>
+  </header>
+  <main>
+    <section class="intro">
+      <div><h2>Plant energy overview</h2><p>Explore meter readings, production, tariffs, weather and recommendations in one place.</p></div>
+      <span class="status"><i></i> Local dataset</span>
+    </section>
+    <section id="kpis" class="kpis">
+      <article class="kpi"><span>Data tables</span><strong id="tableCount">—</strong></article>
+      <article class="kpi"><span>Total records</span><strong id="recordCount">—</strong></article>
+      <article class="kpi"><span>Energy (kWh), if available</span><strong id="energyTotal">—</strong></article>
+    </section>
+    <section class="panel">
+      <div class="panel-head"><div><h2>Data explorer</h2><p>Select a source table to inspect its records.</p></div>
+        <select id="tableSelect"><option>Loading tables…</option></select></div>
+      <div id="tableMeta" class="muted"></div>
+      <div class="table-wrap"><table id="dataTable"><tbody><tr><td>Loading…</td></tr></tbody></table></div>
+      <div class="pager"><button id="prevBtn" class="secondary">Previous</button><span id="pageInfo">Page 1</span><button id="nextBtn" class="secondary">Next</button></div>
+    </section>
+    <section class="panel">
+      <h2>Dataset summary</h2><div id="summaryList" class="summary-grid"></div>
+      <ul id="notes" class="notes"></ul>
+    </section>
+    <footer>Three-tier architecture · Presentation layer · Flask application layer · SQLite data layer</footer>
+  </main>
+  <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+</body>
+</html>

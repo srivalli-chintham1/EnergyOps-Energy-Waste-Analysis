@@ -1,0 +1,22 @@
+[
+ {
+  "plant_id":"P01",
+  "plant_name":"Northfield Stamping",
+  "timezone":"America\/Chicago",
+  "latitude":41.88,
+  "longitude":-87.63,
+  "currency":"USD",
+  "status":"ACTIVE",
+  "commissioned_date":"2019-04-01"
+ },
+ {
+  "plant_id":"P02",
+  "plant_name":"Rheinwerk Plastics",
+  "timezone":"Europe\/Berlin",
+  "latitude":52.52,
+  "longitude":13.4,
+  "currency":"EUR",
+  "status":"ACTIVE",
+  "commissioned_date":"2019-04-01"
+ }
+]

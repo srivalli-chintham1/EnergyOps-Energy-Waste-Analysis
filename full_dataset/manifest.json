@@ -1,0 +1,216 @@
+{
+ "command": "python generate.py --seed 20261022 --start 2026-07-01 --days 90 --plants 2 --meters 20 --batches 2000",
+ "external_data": [],
+ "files": {
+  "data/batch_energy.csv": {
+   "bytes": 168268,
+   "rows": 2000,
+   "sha256": "5496df8a20cc8191381129a5fac1e5f1eb5bd3f510bad37fa30c74f306fadea2"
+  },
+  "data/daily_plant_summary.csv": {
+   "bytes": 16608,
+   "rows": 180,
+   "sha256": "9c2477a4cc90cf25d7cd910c1c08d5b1f2d391c32a639dc4749f34e5160698d5"
+  },
+  "data/energy_reading.csv": {
+   "bytes": 21976772,
+   "rows": 172103,
+   "sha256": "51ac3bcc523e933a53e2e3b31e443f6f37e7048bd5498ff9b0073c5156992458"
+  },
+  "data/machine.csv": {
+   "bytes": 1321,
+   "rows": 18,
+   "sha256": "61094ff5852bae39526c212e6611f6897d76f68804c14131cf9f26cb164cd17a"
+  },
+  "data/machine_meter_assignment.csv": {
+   "bytes": 2249,
+   "rows": 36,
+   "sha256": "435ddfb95cdb5fa3d56e61df68feeac435b4c07da61ef5af06c31c831c38709c"
+  },
+  "data/machine_state_period.csv": {
+   "bytes": 570360,
+   "rows": 6514,
+   "sha256": "73b53475e6bcd4dc6ba22ca98b6f2ed58447ebcff93444258e8549fccdfb9f03"
+  },
+  "data/maintenance_event.csv": {
+   "bytes": 3474,
+   "rows": 25,
+   "sha256": "4f903934966ec26608534218dad854bad0a19b2f967667fbe27320fe8b3ef910"
+  },
+  "data/meter.csv": {
+   "bytes": 1485,
+   "rows": 20,
+   "sha256": "d9582d60ba578099f077b19be18a474e2f74c73bcde8b42dfa900a2b68d59f66"
+  },
+  "data/monthly_demand.csv": {
+   "bytes": 567,
+   "rows": 6,
+   "sha256": "8cf6a872c7305e6da0f64738520e747f5d11a89d2e4b5443802b22e4d2f719db"
+  },
+  "data/plant.csv": {
+   "bytes": 227,
+   "rows": 2,
+   "sha256": "3300cf8d6527a0336da8b1ca79e22a0f2ffd42326bfb9b014c2866464d651bbe"
+  },
+  "data/production_batch.csv": {
+   "bytes": 281955,
+   "rows": 2000,
+   "sha256": "b188c9daf64a4f2b41eb65785d48bbddfcd858613e4688ea6a7d7a52b71d3a73"
+  },
+  "data/reading_cost.csv": {
+   "bytes": 12248458,
+   "rows": 172073,
+   "sha256": "b4b00ed8a69475e0ba71b31c84c48d1629c7cd70fff8d3b415b6a02bf1429c4c"
+  },
+  "data/recommendation.csv": {
+   "bytes": 2329,
+   "rows": 11,
+   "sha256": "9d1c3888276d3b28f2007e8e543408986166a4fc65f2f6ff7bd36b2d9de5cb42"
+  },
+  "data/shift.csv": {
+   "bytes": 43429,
+   "rows": 542,
+   "sha256": "5a5166c50bd96642e3a07db7605aff7afc228e07b9466c0a5d7308aefc81009c"
+  },
+  "data/status_history.csv": {
+   "bytes": 520916,
+   "rows": 6104,
+   "sha256": "d3d771dfea14c25aa41f1bc6acd48c8a854706f5735ac0df52ec3cab8adb65a6"
+  },
+  "data/tariff.csv": {
+   "bytes": 2338,
+   "rows": 24,
+   "sha256": "82ec19d618823920e1b3dec5805947544b99dd1c81c1d90dc4e5621b1c4156f8"
+  },
+  "data/tariff_calendar.csv": {
+   "bytes": 7737,
+   "rows": 182,
+   "sha256": "fdd640b3c72e24629c14946af76382e6062a879f8c0440f0591f9b2c984cb30a"
+  },
+  "data/weather_observation.csv": {
+   "bytes": 271891,
+   "rows": 4320,
+   "sha256": "99acc024950b5a856d08b68aa86d7d3e7292f18bdbe5a1ebc0c1dd65c1da5075"
+  },
+  "docs/data_dictionary.csv": {
+   "bytes": 11859,
+   "rows": null,
+   "sha256": "4ac0a7307e1303c773e81479cbda1d650aab83f0a95bd30136e5156cb01b6275"
+  },
+  "docs/data_dictionary.md": {
+   "bytes": 15663,
+   "rows": null,
+   "sha256": "97f24fbe1cbb29b6314894af29bac064e526bf8f55d1087c0a9e3fce50fb1983"
+  },
+  "ground_truth/ground_truth.csv": {
+   "bytes": 37533,
+   "rows": null,
+   "sha256": "6814379d0cad9b45bd510f343f2e2abc9c3281c561c8bd2b9101103f739a64f1"
+  },
+  "ground_truth/ground_truth.json": {
+   "bytes": 65312,
+   "rows": null,
+   "sha256": "14863e1fb852793983b15808619148420a1c6e5eb21fc077c1cb2cb7d6868402"
+  },
+  "json/batch_energy.json": {
+   "bytes": 532265,
+   "rows": null,
+   "sha256": "6da7c290a30deed987f84644cf2c92cdadfbc84e30f7e27d77a52548a4ea23f5"
+  },
+  "json/daily_plant_summary.json": {
+   "bytes": 60605,
+   "rows": null,
+   "sha256": "bae0a268f80c4a546f12bb238423f8cd7be31c677cb15bd977c28d6fbefc1452"
+  },
+  "json/machine.json": {
+   "bytes": 4534,
+   "rows": null,
+   "sha256": "5cd16c40afac23b48501889299bb14c89d47af2ef5d1cbe8730da64169dc82d6"
+  },
+  "json/machine_meter_assignment.json": {
+   "bytes": 6536,
+   "rows": null,
+   "sha256": "0038b97c7d786da0ef2252917f0e4130425e0124cc97289b73abc4ba97e44bbd"
+  },
+  "json/machine_state_period.json": {
+   "bytes": 1243764,
+   "rows": null,
+   "sha256": "5b8a3b7abae9d947f9ad410665075ff758e5e142d912d8ded64d457af1ccc55a"
+  },
+  "json/maintenance_event.json": {
+   "bytes": 8009,
+   "rows": null,
+   "sha256": "40282b60d0f9bbf48de23d7bc189366ec8eb29bd60d3b6e252076f56c4c80105"
+  },
+  "json/meter.json": {
+   "bytes": 5306,
+   "rows": null,
+   "sha256": "e98262cffe5b31f18687f1a831e0913bd099618e4a53dda16a33fd503cb8246f"
+  },
+  "json/monthly_demand.json": {
+   "bytes": 1378,
+   "rows": null,
+   "sha256": "c472b20d83fb74eb09658a3bb55866bd75339c4e663a7ddc7feea57c757bba42"
+  },
+  "json/plant.json": {
+   "bytes": 429,
+   "rows": null,
+   "sha256": "e3f5e0e6f561b07b121d53ace37f91cbb52536b30627d4a390c88aaa3460c1cc"
+  },
+  "json/production_batch.json": {
+   "bytes": 681836,
+   "rows": null,
+   "sha256": "07ec93d3e5fb1b31c22faf23d7b202f7a8d40bac27d27cdcc590e403622c3145"
+  },
+  "json/recommendation.json": {
+   "bytes": 6266,
+   "rows": null,
+   "sha256": "4df89b536a32e600565493d8feececcfc08aae9c2819de40cfe59a09260bc05e"
+  },
+  "json/shift.json": {
+   "bytes": 109486,
+   "rows": null,
+   "sha256": "4d9f0e11f39a02b917f82010a2fa508a233000f4e4248ccb1f8ca725374695e6"
+  },
+  "json/status_history.json": {
+   "bytes": 1232986,
+   "rows": null,
+   "sha256": "8054a54a72f40e32ebb2fc7ffca9a6fa2f05e53e50e21c8074917ceae0a63402"
+  },
+  "json/tariff.json": {
+   "bytes": 7970,
+   "rows": null,
+   "sha256": "3f1654e7329efb5428b283591b2dfb019e7eeeca6bcf8920876a24218871a2c3"
+  },
+  "json/tariff_calendar.json": {
+   "bytes": 25878,
+   "rows": null,
+   "sha256": "cb8be589564ffc070ed8cb8b7bcff707300b4bf822086bd444814b99268f9cac"
+  },
+  "json/weather_observation.json": {
+   "bytes": 803174,
+   "rows": null,
+   "sha256": "ee4f8b1ac80d63bf19b3efdb432c1f6fb879326e6693732d264e374f0660c90e"
+  },
+  "sql/schema.sql": {
+   "bytes": 7273,
+   "rows": null,
+   "sha256": "43ce6775fc9edf20b32f76adfb2f192b86191513fde106f4dec673db91f9b0dc"
+  },
+  "sql/seed.sql.gz": {
+   "bytes": 5256503,
+   "rows": null,
+   "sha256": "5014cadcf1752c1d5057e868fd6647dcfc5c3bdb3e15218e8a2ca9d585313229"
+  }
+ },
+ "generator": "generate.py",
+ "parameters": {
+  "batches": 2000,
+  "days": 90,
+  "meters": 20,
+  "plants": 2,
+  "start": "2026-07-01"
+ },
+ "provenance": "Fully synthetic. No external datasets, scraped data, or personal information were used. Plant names are fictional.",
+ "seed": 20261022
+}

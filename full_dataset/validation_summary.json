@@ -1,0 +1,791 @@
+{
+ "dataset": "full_dataset",
+ "checks": 154,
+ "passed": 154,
+ "failed": 0,
+ "foreign_keys_checked": 28,
+ "ground_truth_rows": 143,
+ "ground_truth_by_issue": {
+  "DUPLICATE_READING": 30,
+  "ENERGY_INTENSITY_SHIFT": 3,
+  "HIGH_IDLE_CONSUMPTION": 4,
+  "KW_KWH_CONFUSION": 25,
+  "MACHINE_OUTSIDE_METER_HIERARCHY": 25,
+  "METER_GAP": 39,
+  "METER_TOTAL_MISMATCH": 3,
+  "PEAK_DEMAND_SPIKE": 13,
+  "TARIFF_TIMEZONE_MISMATCH": 1
+ },
+ "results": [
+  {
+   "check": "columns match dictionary: Plant",
+   "status": "PASS",
+   "detail": ""
+  },
+  {
+   "check": "PK unique: Plant",
+   "status": "PASS",
+   "detail": "2 rows"
+  },
+  {
+   "check": "enum Plant.currency",
+   "status": "PASS",
+   "detail": "[]"
+  },
+  {
+   "check": "enum Plant.status",
+   "status": "PASS",
+   "detail": "[]"
+  },
+  {
+   "check": "columns match dictionary: Meter",
+   "status": "PASS",
+   "detail": ""
+  },
+  {
+   "check": "PK unique: Meter",
+   "status": "PASS",
+   "detail": "20 rows"
+  },
+  {
+   "check": "enum Meter.meter_type",
+   "status": "PASS",
+   "detail": "[]"
+  },
+  {
+   "check": "enum Meter.energy_unit",
+   "status": "PASS",
+   "detail": "[]"
+  },
+  {
+   "check": "enum Meter.demand_unit",
+   "status": "PASS",
+   "detail": "[]"
+  },
+  {
+   "check": "enum Meter.status",
+   "status": "PASS",
+   "detail": "[]"
+  },
+  {
+   "check": "columns match dictionary: Machine",
+   "status": "PASS",
+   "detail": ""
+  },
+  {
+   "check": "PK unique: Machine",
+   "status": "PASS",
+   "detail": "18 rows"
+  },
+  {
+   "check": "enum Machine.machine_type",
+   "status": "PASS",
+   "detail": "[]"
+  },
+  {
+   "check": "enum Machine.status",
+   "status": "PASS",
+   "detail": "[]"
+  },
+  {
+   "check": "columns match dictionary: MachineMeterAssignment",
+   "status": "PASS",
+   "detail": ""
+  },
+  {
+   "check": "PK unique: MachineMeterAssignment",
+   "status": "PASS",
+   "detail": "36 rows"
+  },
+  {
+   "check": "enum MachineMeterAssignment.relation",
+   "status": "PASS",
+   "detail": "[]"
+  },
+  {
+   "check": "columns match dictionary: Shift",
+   "status": "PASS",
+   "detail": ""
+  },
+  {
+   "check": "PK unique: Shift",
+   "status": "PASS",
+   "detail": "542 rows"
+  },
+  {
+   "check": "enum Shift.shift_code",
+   "status": "PASS",
+   "detail": "[]"
+  },
+  {
+   "check": "columns match dictionary: TariffCalendar",
+   "status": "PASS",
+   "detail": ""
+  },
+  {
+   "check": "PK unique: TariffCalendar",
+   "status": "PASS",
+   "detail": "182 rows"
+  },
+  {
+   "check": "enum TariffCalendar.day_type",
+   "status": "PASS",
+   "detail": "[]"
+  },
+  {
+   "check": "columns match dictionary: Tariff",
+   "status": "PASS",
+   "detail": ""
+  },
+  {
+   "check": "PK unique: Tariff",
+   "status": "PASS",
+   "detail": "24 rows"
+  },
+  {
+   "check": "enum Tariff.day_type",
+   "status": "PASS",
+   "detail": "[]"
+  },
+  {
+   "check": "enum Tariff.tou_band",
+   "status": "PASS",
+   "detail": "[]"
+  },
+  {
+   "check": "enum Tariff.currency",
+   "status": "PASS",
+   "detail": "[]"
+  },
+  {
+   "check": "columns match dictionary: WeatherObservation",
+   "status": "PASS",
+   "detail": ""
+  },
+  {
+   "check": "PK unique: WeatherObservation",
+   "status": "PASS",
+   "detail": "4320 rows"
+  },
+  {
+   "check": "enum WeatherObservation.source",
+   "status": "PASS",
+   "detail": "[]"
+  },
+  {
+   "check": "columns match dictionary: ProductionBatch",
+   "status": "PASS",
+   "detail": ""
+  },
+  {
+   "check": "PK unique: ProductionBatch",
+   "status": "PASS",
+   "detail": "2000 rows"
+  },
+  {
+   "check": "enum ProductionBatch.product_code",
+   "status": "PASS",
+   "detail": "[]"
+  },
+  {
+   "check": "enum ProductionBatch.status",
+   "status": "PASS",
+   "detail": "[]"
+  },
+  {
+   "check": "columns match dictionary: EnergyReading",
+   "status": "PASS",
+   "detail": ""
+  },
+  {
+   "check": "PK unique: EnergyReading",
+   "status": "PASS",
+   "detail": "172103 rows"
+  },
+  {
+   "check": "columns match dictionary: MaintenanceEvent",
+   "status": "PASS",
+   "detail": ""
+  },
+  {
+   "check": "PK unique: MaintenanceEvent",
+   "status": "PASS",
+   "detail": "25 rows"
+  },
+  {
+   "check": "enum MaintenanceEvent.event_type",
+   "status": "PASS",
+   "detail": "[]"
+  },
+  {
+   "check": "enum MaintenanceEvent.reason_code",
+   "status": "PASS",
+   "detail": "[]"
+  },
+  {
+   "check": "enum MaintenanceEvent.status",
+   "status": "PASS",
+   "detail": "[]"
+  },
+  {
+   "check": "columns match dictionary: Recommendation",
+   "status": "PASS",
+   "detail": ""
+  },
+  {
+   "check": "PK unique: Recommendation",
+   "status": "PASS",
+   "detail": "11 rows"
+  },
+  {
+   "check": "enum Recommendation.rec_type",
+   "status": "PASS",
+   "detail": "[]"
+  },
+  {
+   "check": "enum Recommendation.value_unit",
+   "status": "PASS",
+   "detail": "[]"
+  },
+  {
+   "check": "enum Recommendation.currency",
+   "status": "PASS",
+   "detail": "[]"
+  },
+  {
+   "check": "enum Recommendation.status",
+   "status": "PASS",
+   "detail": "[]"
+  },
+  {
+   "check": "columns match dictionary: StatusHistory",
+   "status": "PASS",
+   "detail": ""
+  },
+  {
+   "check": "PK unique: StatusHistory",
+   "status": "PASS",
+   "detail": "6104 rows"
+  },
+  {
+   "check": "enum StatusHistory.entity_type",
+   "status": "PASS",
+   "detail": "[]"
+  },
+  {
+   "check": "columns match dictionary: MachineStatePeriod",
+   "status": "PASS",
+   "detail": ""
+  },
+  {
+   "check": "PK unique: MachineStatePeriod",
+   "status": "PASS",
+   "detail": "6514 rows"
+  },
+  {
+   "check": "enum MachineStatePeriod.state",
+   "status": "PASS",
+   "detail": "[]"
+  },
+  {
+   "check": "columns match dictionary: ReadingCost",
+   "status": "PASS",
+   "detail": ""
+  },
+  {
+   "check": "PK unique: ReadingCost",
+   "status": "PASS",
+   "detail": "172073 rows"
+  },
+  {
+   "check": "enum ReadingCost.tou_band",
+   "status": "PASS",
+   "detail": "[]"
+  },
+  {
+   "check": "columns match dictionary: DailyPlantSummary",
+   "status": "PASS",
+   "detail": ""
+  },
+  {
+   "check": "PK unique: DailyPlantSummary",
+   "status": "PASS",
+   "detail": "180 rows"
+  },
+  {
+   "check": "enum DailyPlantSummary.reconcile_status",
+   "status": "PASS",
+   "detail": "[]"
+  },
+  {
+   "check": "columns match dictionary: BatchEnergy",
+   "status": "PASS",
+   "detail": ""
+  },
+  {
+   "check": "PK unique: BatchEnergy",
+   "status": "PASS",
+   "detail": "2000 rows"
+  },
+  {
+   "check": "columns match dictionary: MonthlyDemand",
+   "status": "PASS",
+   "detail": ""
+  },
+  {
+   "check": "PK unique: MonthlyDemand",
+   "status": "PASS",
+   "detail": "6 rows"
+  },
+  {
+   "check": "required fields non-null (all tables)",
+   "status": "PASS",
+   "detail": ""
+  },
+  {
+   "check": "FK Meter.plant_id -> Plant.plant_id",
+   "status": "PASS",
+   "detail": "0"
+  },
+  {
+   "check": "FK Meter.parent_meter_id -> Meter.meter_id",
+   "status": "PASS",
+   "detail": "0"
+  },
+  {
+   "check": "FK Machine.plant_id -> Plant.plant_id",
+   "status": "PASS",
+   "detail": "0"
+  },
+  {
+   "check": "FK MachineMeterAssignment.machine_id -> Machine.machine_id",
+   "status": "PASS",
+   "detail": "0"
+  },
+  {
+   "check": "FK MachineMeterAssignment.meter_id -> Meter.meter_id",
+   "status": "PASS",
+   "detail": "0"
+  },
+  {
+   "check": "FK Shift.plant_id -> Plant.plant_id",
+   "status": "PASS",
+   "detail": "0"
+  },
+  {
+   "check": "FK TariffCalendar.plant_id -> Plant.plant_id",
+   "status": "PASS",
+   "detail": "0"
+  },
+  {
+   "check": "FK Tariff.plant_id -> Plant.plant_id",
+   "status": "PASS",
+   "detail": "0"
+  },
+  {
+   "check": "FK WeatherObservation.plant_id -> Plant.plant_id",
+   "status": "PASS",
+   "detail": "0"
+  },
+  {
+   "check": "FK ProductionBatch.plant_id -> Plant.plant_id",
+   "status": "PASS",
+   "detail": "0"
+  },
+  {
+   "check": "FK ProductionBatch.machine_id -> Machine.machine_id",
+   "status": "PASS",
+   "detail": "0"
+  },
+  {
+   "check": "FK ProductionBatch.shift_id -> Shift.shift_id",
+   "status": "PASS",
+   "detail": "0"
+  },
+  {
+   "check": "FK EnergyReading.meter_id -> Meter.meter_id",
+   "status": "PASS",
+   "detail": "0"
+  },
+  {
+   "check": "FK EnergyReading.machine_id -> Machine.machine_id",
+   "status": "PASS",
+   "detail": "0"
+  },
+  {
+   "check": "FK MaintenanceEvent.plant_id -> Plant.plant_id",
+   "status": "PASS",
+   "detail": "0"
+  },
+  {
+   "check": "FK MaintenanceEvent.machine_id -> Machine.machine_id",
+   "status": "PASS",
+   "detail": "0"
+  },
+  {
+   "check": "FK Recommendation.plant_id -> Plant.plant_id",
+   "status": "PASS",
+   "detail": "0"
+  },
+  {
+   "check": "FK Recommendation.meter_id -> Meter.meter_id",
+   "status": "PASS",
+   "detail": "0"
+  },
+  {
+   "check": "FK Recommendation.machine_id -> Machine.machine_id",
+   "status": "PASS",
+   "detail": "0"
+  },
+  {
+   "check": "FK MachineStatePeriod.machine_id -> Machine.machine_id",
+   "status": "PASS",
+   "detail": "0"
+  },
+  {
+   "check": "FK MachineStatePeriod.batch_id -> ProductionBatch.batch_id",
+   "status": "PASS",
+   "detail": "0"
+  },
+  {
+   "check": "FK ReadingCost.reading_id -> EnergyReading.reading_id",
+   "status": "PASS",
+   "detail": "0"
+  },
+  {
+   "check": "FK ReadingCost.tariff_id -> Tariff.tariff_id",
+   "status": "PASS",
+   "detail": "0"
+  },
+  {
+   "check": "FK DailyPlantSummary.plant_id -> Plant.plant_id",
+   "status": "PASS",
+   "detail": "0"
+  },
+  {
+   "check": "FK BatchEnergy.batch_id -> ProductionBatch.batch_id",
+   "status": "PASS",
+   "detail": "0"
+  },
+  {
+   "check": "FK BatchEnergy.machine_id -> Machine.machine_id",
+   "status": "PASS",
+   "detail": "0"
+  },
+  {
+   "check": "FK BatchEnergy.meter_id -> Meter.meter_id",
+   "status": "PASS",
+   "detail": "0"
+  },
+  {
+   "check": "FK MonthlyDemand.plant_id -> Plant.plant_id",
+   "status": "PASS",
+   "detail": "0"
+  },
+  {
+   "check": "StatusHistory polymorphic FK -> ProductionBatch",
+   "status": "PASS",
+   "detail": ""
+  },
+  {
+   "check": "StatusHistory polymorphic FK -> MaintenanceEvent",
+   "status": "PASS",
+   "detail": ""
+  },
+  {
+   "check": "StatusHistory polymorphic FK -> Recommendation",
+   "status": "PASS",
+   "detail": ""
+  },
+  {
+   "check": "ID patterns",
+   "status": "PASS",
+   "detail": ""
+  },
+  {
+   "check": "one MAIN meter per plant",
+   "status": "PASS",
+   "detail": ""
+  },
+  {
+   "check": "SUB meters parent is MAIN of same plant",
+   "status": "PASS",
+   "detail": ""
+  },
+  {
+   "check": "every machine has DIRECT_SUB + INDIRECT_MAIN",
+   "status": "PASS",
+   "detail": ""
+  },
+  {
+   "check": "bridge: machine and meter in same plant",
+   "status": "PASS",
+   "detail": ""
+  },
+  {
+   "check": "meters = machines + plants (sub per machine)",
+   "status": "PASS",
+   "detail": ""
+  },
+  {
+   "check": "interval = 15 min",
+   "status": "PASS",
+   "detail": ""
+  },
+  {
+   "check": "demand_peak >= demand_avg; values non-negative",
+   "status": "PASS",
+   "detail": ""
+  },
+  {
+   "check": "duplicate natural keys == ground truth",
+   "status": "PASS",
+   "detail": "30 found"
+  },
+  {
+   "check": "missing intervals == ground-truth gaps",
+   "status": "PASS",
+   "detail": "727 missing"
+  },
+  {
+   "check": "kW/kWh confusion detected == ground truth",
+   "status": "PASS",
+   "detail": "25 detected"
+  },
+  {
+   "check": "confused rows are 4x overstated",
+   "status": "PASS",
+   "detail": ""
+  },
+  {
+   "check": "meter register vs interval sum mismatches == ground truth",
+   "status": "PASS",
+   "detail": "3 detected"
+  },
+  {
+   "check": "register delta after gap >= interval energy (lost energy kept in register)",
+   "status": "PASS",
+   "detail": ""
+  },
+  {
+   "check": "register deltas reconcile on all unaffected consecutive rows",
+   "status": "PASS",
+   "detail": "171986 rows"
+  },
+  {
+   "check": "machine outside meter hierarchy == ground truth",
+   "status": "PASS",
+   "detail": "25 detected"
+  },
+  {
+   "check": "MAIN meter readings carry no machine_id",
+   "status": "PASS",
+   "detail": ""
+  },
+  {
+   "check": "energy totals reconcile: main > sum(submeters) in every interval; overall unmetered share 10-25%",
+   "status": "PASS",
+   "detail": "16576 fully observed intervals, overall unmetered 15.8% (interval range 5.3%-57.9%; higher at night/Sundays when machines are in standby)"
+  },
+  {
+   "check": "tariff windows tile 24h without overlap per plant/day type/period",
+   "status": "PASS",
+   "detail": ""
+  },
+  {
+   "check": "tariff timezone mismatch == ground truth",
+   "status": "PASS",
+   "detail": "1 rows"
+  },
+  {
+   "check": "ReadingCost covers each first-transmission reading once",
+   "status": "PASS",
+   "detail": ""
+  },
+  {
+   "check": "cost uses correct tariff interval (independent tz recompute)",
+   "status": "PASS",
+   "detail": "0 mismatches"
+  },
+  {
+   "check": "cost = clean energy x rate; clean energy = kW/4",
+   "status": "PASS",
+   "detail": ""
+  },
+  {
+   "check": "rate matches tariff row",
+   "status": "PASS",
+   "detail": ""
+  },
+  {
+   "check": "shifts are 8h, ordered",
+   "status": "PASS",
+   "detail": ""
+  },
+  {
+   "check": "batch start inside a working shift of same plant",
+   "status": "PASS",
+   "detail": ""
+  },
+  {
+   "check": "batch date ordering (start < end <= planned_end)",
+   "status": "PASS",
+   "detail": ""
+  },
+  {
+   "check": "units_produced <= units_planned",
+   "status": "PASS",
+   "detail": ""
+  },
+  {
+   "check": "no overlapping batches per machine",
+   "status": "PASS",
+   "detail": ""
+  },
+  {
+   "check": "batch machine in batch plant",
+   "status": "PASS",
+   "detail": ""
+  },
+  {
+   "check": "batch ids ordered by start time",
+   "status": "PASS",
+   "detail": ""
+  },
+  {
+   "check": "aborted batches end early",
+   "status": "PASS",
+   "detail": ""
+  },
+  {
+   "check": "lifecycle transitions valid",
+   "status": "PASS",
+   "detail": ""
+  },
+  {
+   "check": "history chains consistent (from == previous to)",
+   "status": "PASS",
+   "detail": ""
+  },
+  {
+   "check": "history timestamps non-decreasing per entity",
+   "status": "PASS",
+   "detail": ""
+  },
+  {
+   "check": "ProductionBatch.status equals last history state",
+   "status": "PASS",
+   "detail": ""
+  },
+  {
+   "check": "MaintenanceEvent.status equals last history state",
+   "status": "PASS",
+   "detail": ""
+  },
+  {
+   "check": "Recommendation.status equals last history state",
+   "status": "PASS",
+   "detail": ""
+  },
+  {
+   "check": "maintenance date ordering",
+   "status": "PASS",
+   "detail": ""
+  },
+  {
+   "check": "state periods contiguous per machine",
+   "status": "PASS",
+   "detail": ""
+  },
+  {
+   "check": "RUN periods equal their batch window",
+   "status": "PASS",
+   "detail": ""
+  },
+  {
+   "check": "batch_id set only for RUN",
+   "status": "PASS",
+   "detail": ""
+  },
+  {
+   "check": "daily main_kwh equals sum of ReadingCost on main meter",
+   "status": "PASS",
+   "detail": ""
+  },
+  {
+   "check": "daily cost equals sum of ReadingCost (main meter)",
+   "status": "PASS",
+   "detail": ""
+  },
+  {
+   "check": "daily units equal batch units",
+   "status": "PASS",
+   "detail": ""
+  },
+  {
+   "check": "daily intensity = main kWh / units (normalised by output)",
+   "status": "PASS",
+   "detail": ""
+  },
+  {
+   "check": "BatchEnergy intensity = energy / units on full-coverage batches",
+   "status": "PASS",
+   "detail": ""
+  },
+  {
+   "check": "demand charge = peak_kw x tariff demand charge",
+   "status": "PASS",
+   "detail": ""
+  },
+  {
+   "check": "recommendations cite measurable baseline and expected savings",
+   "status": "PASS",
+   "detail": ""
+  },
+  {
+   "check": "recommendation evidence precedes creation",
+   "status": "PASS",
+   "detail": ""
+  },
+  {
+   "check": "REDUCE_IDLE_LOAD: recommended machines == ground-truth machines",
+   "status": "PASS",
+   "detail": "got ['MCH-P01-001', 'MCH-P01-003', 'MCH-P01-006', 'MCH-P02-003'] want ['MCH-P01-001', 'MCH-P01-003', 'MCH-P01-006', 'MCH-P02-003']"
+  },
+  {
+   "check": "INVESTIGATE_INTENSITY_SHIFT: recommended machines == ground-truth machines",
+   "status": "PASS",
+   "detail": "got ['MCH-P01-005', 'MCH-P01-009', 'MCH-P02-002'] want ['MCH-P01-005', 'MCH-P01-009', 'MCH-P02-002']"
+  },
+  {
+   "check": "every peak-demand recommendation sits in a plant-month with an injected spike",
+   "status": "PASS",
+   "detail": "[('P01', '2026-08'), ('P02', '2026-07'), ('P02', '2026-08'), ('P02', '2026-09')]"
+  },
+  {
+   "check": "weather hourly, one row per plant-hour; plausible range",
+   "status": "PASS",
+   "detail": ""
+  },
+  {
+   "check": "weather cadence is exactly 1h",
+   "status": "PASS",
+   "detail": ""
+  },
+  {
+   "check": "no ground-truth columns in input tables",
+   "status": "PASS",
+   "detail": ""
+  },
+  {
+   "check": "ground truth file has documented columns",
+   "status": "PASS",
+   "detail": ""
+  },
+  {
+   "check": "ground-truth ids not embedded in input data",
+   "status": "PASS",
+   "detail": ""
+  }
+ ]
+}
